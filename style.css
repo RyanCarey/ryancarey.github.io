@@ -10,6 +10,17 @@
     text-align: center;
 }
 
+.image-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+}
+
 
 @font-face {
   font-family: 'Latin Modern';
