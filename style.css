@@ -5,6 +5,12 @@
  * Licensed under MIT (https://github.com/vincentdoerig/latex-css/blob/master/LICENSE)
 */
 
+
+.center-text {
+    text-align: center;
+}
+
+
 @font-face {
   font-family: 'Latin Modern';
   font-style: normal;
@@ -102,8 +108,8 @@
 
 :root {
   --body-color: hsl(0, 5%, 10%);
-  --body-bg-color: hsl(210, 20%, 98%);
-  --link-visited: hsl(0, 100%, 33%);
+  --body-bg-color: hsl(210, 0%, 100%);
+  --link-visited: hsl(215, 100%, 33%);
   --link-focus-outline: hsl(220, 90%, 52%);
   --pre-bg-color: hsl(210, 28%, 93%);
   --kbd-bg-color: hsl(210, 5%, 100%);
@@ -585,9 +591,10 @@ input.sidenote-toggle {
 
 /* Heading typography */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   line-height: 3.25rem;
-  margin-bottom: 1.625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 1.225rem;
 }
 
 h2 {
