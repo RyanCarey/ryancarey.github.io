@@ -13,13 +13,13 @@ AI safety problems.
 </p>
 
 <p>
-One interesting problem in AI safety is how to design a corrigibile system --- one
+One interesting problem is how to design a corrigibile system - one
 that wants to folow and not manipulate its instructions.
 Even systems that try to learn the human's goals <a href="https://arxiv.org/abs/1709.06275">may be incorrigible</a>.
 Also, corrigible systems may behave unsafely, whereas ``<a href="https://arxiv.org/abs/2305.19861">shutdown instructable</a>'' systems are safe.</p>
 
 <p>A second problem is how to identify and shape agent's incentives 
--- such as whether an agent's goal compels it
+- such as whether an agent's goal compels it
 to (un-)fairly respond to sensitive demographic characterics, 
 or (un-)safely influence delicate parts of the environment.
 Sometimes the causal structure alone suffices to <a href="https://arxiv.org/abs/2102.01685">identify</a> the incentives --- see also the closely related issue of <a href="https://arxiv.org/abs/2202.11629">identifying nonrequisite edges</a> in an influence diagram.
@@ -27,18 +27,18 @@ One can also <a href="https://arxiv.org/abs/2204.10018">modify</a>
 an AI system so that it won't ``try'' to influence a delicate variable 
 and in-fact this is a general template that many past safe AI algorithms implicitly follow.
 
-<p>A third problem is specification-gaming --- where an AI system fulfills an extreme
+<p>A third is specification-gaming - where a system fulfills an extreme
 version of its assigned goal, rather than the intended goal. One proposed remedy is for the AI system to
 <a href="https://www.fhi.ox.ac.uk/wp-content/uploads/SafeML2019_paper_40.pdf">quantilise</a> the 
-assigned objective, i.e. to sample from the best n% of actions that some human demonstrator performs.
+assigned objective, i.e. to sample from the best n% of actions performed by a human demonstrator.
 Quantilisation has some nice properties, but they don't hold for all 
 kinds of goal mis-specification.</p>
 
 <p>Since a lot of these analyses benefit from using graphical causal models, 
 my PhD studies causality, including how to best represent marginalisation and 
-selection in causal graphs.</p>
+conditionalisation in causal graphs.</p>
 
-<p>I’ve also used machine learning to <a href="https://www.fhi.ox.ac.uk/wp-content/uploads/predicting-judgments-tr2018.pdf">predict the outcomes of human deliberation</a>, and on analysed <a href="https://aiimpacts.org/interpreting-ai-compute-trends/">trends in AI experiments’ compute usage</a>.</p>
+<!--<p>I’ve also used machine learning to <a href="https://www.fhi.ox.ac.uk/wp-content/uploads/predicting-judgments-tr2018.pdf">predict human deliberation</a>, and on analysed <a href="https://aiimpacts.org/interpreting-ai-compute-trends/">trends in AI experiments’ compute usage</a>.</p>-->
 
 <h1>Selected Publications</h1>
 <p><strong><a href="https://arxiv.org/abs/2305.19861">Human Control: Definitions and Algorithms</a></strong>: We study definitions of human control, including variants of corrigibility and alignment, the assurances they offer for human autonomy, and the algorithms that can be used to obtain them. <strong>Ryan Carey</strong>, Tom Everitt. UAI. 2023.</p>
