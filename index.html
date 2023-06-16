@@ -3,15 +3,42 @@
 <p class="center-text"> <a href="ryan_carey_cv.pdf">CV</a> &middot; 
 <a href="https://causalincentives.com/">Causal Incentives Working Group</a> &middot; <a href="https://scholar.google.com/citations?user=9U1CpcAAAAAJ&hl=en">Google Scholar</a> &middot; <a href="https://twitter.com/ryancareyai">Twitter</a></p>
 
-<h1>Summary</h1>
 
-<p>I’m a final-year PhD student at Oxford, supervised by <a href="https://www.stats.ox.ac.uk/~evans/">Robin Evans</a>, where I work on theoretical questions involving causal models. I’m also a cofounder of the <a href="http://causalincentives.com">Causal Incentives Working Group</a>, which uses causal models to reason about AI safety. Previously, I’ve been a research fellow at the Future of Humanity Institute, a research intern at DeepMind and OpenAI, and the founder of the <a href="https://forum.effectivealtruism.org/">EA Forum</a>.</p>
+<p>I’m a final-year PhD student at Oxford, supervised by <a href="https://www.stats.ox.ac.uk/~evans/">Robin Evans</a>, where I work on theory involving causal models. I’m also a cofounder of the <a href="http://causalincentives.com">Causal Incentives Working Group</a>, which uses causal models to reason about AI safety. Previously, I’ve been a research fellow at the Future of Humanity Institute, a research intern at DeepMind and OpenAI, and the founder of the <a href="https://forum.effectivealtruism.org/">EA Forum</a>.</p>
 
-<p>I’ve worked on some theory for designing AI systems that are corrigible (that follow and don’t try to manipulate their instructions). Specifically, I’ve showed how reward learning systems <a href="https://arxiv.org/abs/1709.06275">may behave incorrigibly</a>, how corrigible systems <a href="https://arxiv.org/abs/2305.19861">may behave unsafely, and how newer definitions</a>, if met, would guarantee safety.</p>
+<h1>My research</h1>
+<p> 
+I've been especially interested in finding concepts and tools for modelling
+AI safety problems.
+</p>
 
-<p>I’ve also worked on <a href="https://arxiv.org/abs/2102.01685">characterising</a> and <a href="https://arxiv.org/abs/2204.10018">modifying</a> agents’ incentives, the former of which is closely related to the problem of <a href="https://arxiv.org/abs/2202.11629">identifying nonrequisite edges</a> in an influence diagram.</p>
+<p>
+One interesting problem in AI safety is how to design a corrigibile system --- one
+that wants to folow and not manipulate its instructions.
+Even systems that try to learn the human's goals <a href="https://arxiv.org/abs/1709.06275">may be incorrigible</a>.
+Also, corrigible systems may behave unsafely, whereas ``<a href="https://arxiv.org/abs/2305.19861">shutdown instructable</a>'' systems are safe.</p>
 
-<p>I’ve also worked on using machine learning to <a href="https://www.fhi.ox.ac.uk/wp-content/uploads/predicting-judgments-tr2018.pdf">predict the outcomes of human deliberation</a>, and on analysing <a href="https://aiimpacts.org/interpreting-ai-compute-trends/">trends in AI experiments’ compute usage</a>.</p>
+<p>A second problem is how to identify and shape agent's incentives 
+-- such as whether an agent's goal compels it
+to (un-)fairly respond to sensitive demographic characterics, 
+or (un-)safely influence delicate parts of the environment.
+Sometimes the causal structure alone suffices to <a href="https://arxiv.org/abs/2102.01685">identify</a> the incentives --- see also the closely related issue of <a href="https://arxiv.org/abs/2202.11629">identifying nonrequisite edges</a> in an influence diagram.
+One can also <a href="https://arxiv.org/abs/2204.10018">modify</a>
+an AI system so that it won't ``try'' to influence a delicate variable 
+and in-fact this is a general template that many past safe AI algorithms implicitly follow.
+
+<p>A third problem is specification-gaming --- where an AI system fulfills an extreme
+version of its assigned goal, rather than the intended goal. One proposed remedy is for the AI system to
+<a href="https://www.fhi.ox.ac.uk/wp-content/uploads/SafeML2019_paper_40.pdf">quantilise</a> the 
+assigned objective, i.e. to sample from the best n% of actions that some human demonstrator performs.
+Quantilisation has some nice properties, but they don't hold for all 
+kinds of goal mis-specification.</p>
+
+<p>Since a lot of these analyses benefit from using graphical causal models, 
+my PhD studies causality, including how to best represent marginalisation and 
+selection in causal graphs.</p>
+
+<p>I’ve also used machine learning to <a href="https://www.fhi.ox.ac.uk/wp-content/uploads/predicting-judgments-tr2018.pdf">predict the outcomes of human deliberation</a>, and on analysed <a href="https://aiimpacts.org/interpreting-ai-compute-trends/">trends in AI experiments’ compute usage</a>.</p>
 
 <h1>Selected Publications</h1>
 <p><strong><a href="https://arxiv.org/abs/2305.19861">Human Control: Definitions and Algorithms</a></strong>: We study definitions of human control, including variants of corrigibility and alignment, the assurances they offer for human autonomy, and the algorithms that can be used to obtain them. <strong>Ryan Carey</strong>, Tom Everitt. UAI. 2023.</p>
@@ -20,16 +47,18 @@
 <p><strong><a href="https://arxiv.org/abs/2202.11629">A Complete Criterion for Value of Information in Soluble Influence Diagrams</a></strong>: Presents a complete graphical criterion for value of information in influence diagrams with more than one decision node, along with ID homomorphisms and trees of systems. Chris van Merwijk*, <strong>Ryan Carey</strong>*, Tom Everitt AAAI. 2022.</p>
 <p><strong><a href="https://arxiv.org/abs/2202.10816">Why Fair Labels Can Yield Unfair Predictions: Graphical Conditions for Introduced Unfairness</a></strong>: When is unfairness incentivized? Perhaps surprisingly, unfairness can be incentivized even when labels are completely fair. Carolyn Ashurst, <strong>Ryan Carey</strong>, Silvia Chiappa, Tom Everitt. AAAI. 2022.</p>
 <p><strong><a href="https://arxiv.org/abs/2102.01685">Agent Incentives: A Causal Perspective</a></strong>: An agent’s incentives are largely determined by its causal context. This paper gives sound and complete graphical criteria for four incentive concepts: value of information, value of control, response incentives, and control incentives. Tom Everitt*, <strong>Ryan Carey</strong>*, Eric Langlois*, Pedro A. Ortega, Shane Legg. AAAI. 2021.</p>
-
+<p><strong><a href="">Incorrigibility in the CIRL Framework</a></strong>: A study of how the value learning method, cooperative inverse reinforcement learning, may not prevent incorrigible behaviour. <strong>Ryan Carey</strong>. AIES. 2018.
 
 
 
 <h1>Other Writing</h1>
 <ul>
+    <li><a href="https://www.alignmentforum.org/posts/owdBiF8pj6Lpwwdup/addressing-three-problems-with-counterfactual-corrigibility">Addressing three problems with counterfactual corrigibility: bad bets, defending against backstops, and overconfidence</a> (<a href="https://www.alignmentforum.org/posts/nDHbgjdddG5EN6ocg/announcement-ai-alignment-prize-round-4-winners">AI alignment prize)</a></li>
     <li><a href="EA_Handbook.pdf">EA Handbook</a> (editor)</li>
-    <li><a href="https://aiimpacts.org/interpreting-ai-compute-trends/">Interpreting AI compute trends</a></li>
-    <li><a href="https://forum.effectivealtruism.org/posts/EP6X362Q3ziibA99e/show-a-framework-for-shaping-your-talent-for-direct-work">SHOW: A framework for shaping your talent for direct work</a></li>
-    <li><a href="https://80000hours.org/2014/05/how-much-do-y-combinator-founders-earn/">How much do Y Combinator founders earn?</a></li>
+    <li><a href="https://aiimpacts.org/interpreting-ai-compute-trends/">Interpreting AI compute trends</a> (see also <a href="https://aiimpacts.org/reinterpreting-ai-and-compute/">this interesting reply</a>)
+    </li>
+    <li><a href="https://forum.effectivealtruism.org/posts/EP6X362Q3ziibA99e/show-a-framework-for-shaping-your-talent-for-direct-work">SHOW: A framework for shaping your talent for direct work</a><a href="https://forum.effectivealtruism.org/posts/bv8QGK9uPPg5fdFhk/ea-forum-prize-winners-for-march-2019"> (EA Forum prize)</a></li>
+    <li><a href="https://80000hours.org/2014/05/how-much-do-y-combinator-founders-earn/">How much do Y Combinator founders earn?</a> (<a href="https://www.businessinsider.com/startup-founder-salaries-y-combinator-2014-5?r=US&IR=T#:~:text=And%20how%20much%20should%20they,money%2C%20that%20salary%20can%20double.">Business Insider</a> coverage)</li>
 </ul>
 
 <div class="image-container">
