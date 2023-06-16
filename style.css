@@ -6,9 +6,6 @@
 */
 
 
-.center-text {
-    text-align: center;
-}
 
 .image-container {
     display: flex;
@@ -221,6 +218,10 @@ p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   margin-top: 1rem;
+}
+
+.center-text {
+    text-align: center;
 }
 
 /* Indents paragraphs like in LaTeX documents*/
